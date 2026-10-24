@@ -1,0 +1,6 @@
+{
+  "name": "Vexora",
+  "description": "Every File. One Powerful Workspace. All-in-one private in-browser PDF, Image, and document tools. Convert, compress, resize, and edit files entirely on your device.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
