@@ -21,6 +21,8 @@ import {
   Stamp,
   PenTool,
   FileDown,
+  BookOpen,
+  FileCheck,
 } from 'lucide-react';
 import { ToolDef } from '../data/tools';
 
@@ -44,6 +46,8 @@ const ICON_MAP: Record<string, React.FC<{ className?: string }>> = {
   Stamp,
   PenTool,
   FileDown,
+  BookOpen,
+  FileCheck,
 };
 
 interface ToolCardProps {

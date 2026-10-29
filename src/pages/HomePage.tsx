@@ -218,13 +218,23 @@ export const HomePage: React.FC<HomePageProps> = ({
                 </button>
 
                 <button
-                  onClick={() => onSelectTool('image-metadata')}
+                  onClick={() => onSelectTool('images-to-pptx')}
+                  className="p-3 text-left rounded-xl border border-slate-200 dark:border-slate-700 hover:border-amber-500 hover:bg-amber-50/50 dark:hover:bg-amber-950/20 transition-all cursor-pointer group"
+                >
+                  <div className="font-semibold text-xs text-[#1E1B4B] dark:text-white group-hover:text-amber-600">
+                    Images to PowerPoint
+                  </div>
+                  <div className="text-[11px] text-slate-400 mt-0.5">Generate .pptx presentation</div>
+                </button>
+
+                <button
+                  onClick={() => onSelectTool('file-inspector')}
                   className="p-3 text-left rounded-xl border border-slate-200 dark:border-slate-700 hover:border-indigo-500 hover:bg-indigo-50/50 dark:hover:bg-indigo-950/20 transition-all cursor-pointer group"
                 >
                   <div className="font-semibold text-xs text-[#1E1B4B] dark:text-white group-hover:text-indigo-600">
-                    Inspect Metadata
+                    File Inspector & Hashes
                   </div>
-                  <div className="text-[11px] text-slate-400 mt-0.5">Dimensions, depth, alpha</div>
+                  <div className="text-[11px] text-slate-400 mt-0.5">SHA-256 & magic signatures</div>
                 </button>
               </div>
             </div>

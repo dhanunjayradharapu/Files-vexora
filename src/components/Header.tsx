@@ -75,6 +75,12 @@ export const Header: React.FC<HeaderProps> = ({
           >
             PowerPoint
           </button>
+          <button
+            onClick={() => handleNavClick('document')}
+            className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors whitespace-nowrap cursor-pointer py-1"
+          >
+            Documents
+          </button>
           <a
             href="#faq"
             onClick={(e) => {
@@ -192,6 +198,12 @@ export const Header: React.FC<HeaderProps> = ({
             className="w-full text-left px-3 py-2 rounded-md text-sm font-medium text-slate-800 dark:text-slate-200 hover:bg-indigo-50 dark:hover:bg-slate-800 hover:text-indigo-600"
           >
             PowerPoint Tools
+          </button>
+          <button
+            onClick={() => handleNavClick('document')}
+            className="w-full text-left px-3 py-2 rounded-md text-sm font-medium text-slate-800 dark:text-slate-200 hover:bg-indigo-50 dark:hover:bg-slate-800 hover:text-indigo-600"
+          >
+            Document Tools
           </button>
           <a
             href="#faq"

@@ -26,6 +26,14 @@ import { PdfPageNumbers } from '../tools/PdfPageNumbers';
 import { PdfWatermark } from '../tools/PdfWatermark';
 import { PdfAddImage } from '../tools/PdfAddImage';
 import { CompressPdf } from '../tools/CompressPdf';
+import { PptxExtractMedia } from '../tools/PptxExtractMedia';
+import { ImagesToPptx } from '../tools/ImagesToPptx';
+import { PptxPreviewer } from '../tools/PptxPreviewer';
+import { TextToPdf } from '../tools/TextToPdf';
+import { PdfExtractText } from '../tools/PdfExtractText';
+import { DocxToPdf } from '../tools/DocxToPdf';
+import { EditorToPdf } from '../tools/EditorToPdf';
+import { FileInspector } from '../tools/FileInspector';
 import { ToolCard } from '../components/ToolCard';
 
 interface ToolPageProps {
@@ -117,6 +125,27 @@ export const ToolPage: React.FC<ToolPageProps> = ({
         return <ImageRotator />;
       case 'image-metadata':
         return <ImageMetadata onSelectTool={onSelectTool} />;
+
+      // PowerPoint Tools
+      case 'extract-pptx-images':
+        return <PptxExtractMedia />;
+      case 'images-to-pptx':
+        return <ImagesToPptx />;
+      case 'preview-pptx':
+        return <PptxPreviewer />;
+
+      // Document Tools
+      case 'text-to-pdf':
+        return <TextToPdf />;
+      case 'pdf-extract-text':
+        return <PdfExtractText />;
+      case 'docx-to-pdf':
+        return <DocxToPdf />;
+      case 'editor-to-pdf':
+        return <EditorToPdf />;
+      case 'file-inspector':
+        return <FileInspector />;
+
       default:
         return (
           <div className="bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-2xl p-8 sm:p-12 text-center max-w-2xl mx-auto space-y-6 shadow-sm">

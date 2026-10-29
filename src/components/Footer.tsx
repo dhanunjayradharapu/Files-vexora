@@ -98,10 +98,10 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onSelectTool }
             </ul>
           </div>
 
-          {/* Col 3: PDF & Office */}
+          {/* Col 3: PDF & PowerPoint */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-[#1E1B4B] dark:text-slate-200 mb-3">
-              PDF & Office
+              PDF & PowerPoint
             </h3>
             <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
               <li>
@@ -114,14 +114,6 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onSelectTool }
               </li>
               <li>
                 <button
-                  onClick={() => onSelectTool('split-pdf')}
-                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
-                >
-                  Split & Cut PDF
-                </button>
-              </li>
-              <li>
-                <button
                   onClick={() => onSelectTool('pdf-to-jpg')}
                   className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
                 >
@@ -130,50 +122,94 @@ export const Footer: React.FC<FooterProps> = ({ onSelectCategory, onSelectTool }
               </li>
               <li>
                 <button
-                  onClick={() => onSelectTool('image-to-pdf')}
-                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
+                  onClick={() => onSelectTool('extract-pptx-images')}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer text-amber-600 dark:text-amber-400 font-medium"
                 >
-                  Image to PDF Converter
+                  Extract PPTX Images
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectTool('compress-pdf')}
+                  onClick={() => onSelectTool('images-to-pptx')}
                   className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
                 >
-                  Compress & Optimize PDF
+                  Images to PowerPoint
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectTool('pdf-watermark')}
+                  onClick={() => onSelectTool('preview-pptx')}
                   className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
                 >
-                  Add Text Watermark
+                  PowerPoint Slide Inspector
                 </button>
               </li>
               <li>
                 <button
-                  onClick={() => onSelectCategory('pdf')}
-                  className="font-medium text-indigo-600 dark:text-indigo-400 hover:underline transition-colors cursor-pointer"
+                  onClick={() => onSelectCategory('powerpoint')}
+                  className="font-medium text-amber-600 dark:text-amber-400 hover:underline transition-colors cursor-pointer"
                 >
-                  View all 12 PDF tools →
+                  View all PowerPoint tools →
                 </button>
               </li>
             </ul>
           </div>
 
-          {/* Col 4: Privacy & Standards */}
+          {/* Col 4: Document Tools */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-wider text-[#1E1B4B] dark:text-slate-200 mb-3">
-              Privacy Architecture
+              Document Tools
             </h3>
-            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed mb-3">
-              Unlike cloud-based services, Vexora processes files locally inside your web browser using HTML5 Canvas, WebAssembly, and Blob technologies.
-            </p>
-            <div className="text-xs text-slate-400 dark:text-slate-500">
-              Your files never leave your computer or phone.
-            </div>
+            <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+              <li>
+                <button
+                  onClick={() => onSelectTool('docx-to-pdf')}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer text-violet-600 dark:text-violet-400 font-medium"
+                >
+                  Word (DOCX) to PDF
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectTool('text-to-pdf')}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
+                >
+                  Plain Text to PDF
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectTool('pdf-extract-text')}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
+                >
+                  Extract Text from PDF
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectTool('editor-to-pdf')}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
+                >
+                  Document Editor to PDF
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectTool('file-inspector')}
+                  className="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors cursor-pointer"
+                >
+                  File Information & Hashes
+                </button>
+              </li>
+              <li>
+                <button
+                  onClick={() => onSelectCategory('document')}
+                  className="font-medium text-violet-600 dark:text-violet-400 hover:underline transition-colors cursor-pointer"
+                >
+                  View all Document tools →
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
 
